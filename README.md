@@ -9,10 +9,10 @@ As you traverse further on through my portfolio, you will see some tasks, functi
 In this section is presented a brief sample of a security incident report conducted alongside a summary of the scenario:
 
 
-| **Section 1: Identify the network protocol involved in the incident** |
-|-|
+| **Section 1: Identify the network protocol involved in the incident**|
+|--|
 | Upon investigating the incident, it appears that a former employee had gained access to the admin panel of the yummyrecipiesforme.com website with the brute force method of guessing the login credentials. |
-| **Section 2: Document the incident** |
+| **Section 2: Document the incident**|
 |In turn, this event lead to a disastrous outcome of modifying the website’s source code to redirect to a malicious clone of the website called greatrecipiesforme.com which included a malicious executable that prompts the viewer to download it, causing slow downs of user devices that have viewed the website. Upon examining the tcpdump log, it seems that everything goes normally as it should, but since yummyrecipiesforme.com was modified with a couple lines of javascript, it initiated the download in which it immediately requested the address of the malicious clone of the original website.|
 | **Section 3: Recommend one remediation for brute force attacks** |
 |The easiest way to prevent such an attack from happening again is to immediately set up different login credentials, with a password containing at least a total of 16 characters of which it can include a minimum of 2 numbers and 2 special characters.|
@@ -66,7 +66,7 @@ For this scenario, a toy company under the name Botium Toys established in the U
 
 ## 3. Linux commands and the CLI
 
-
+In this scenario, 
 
 
 > Written with [StackEdit](https://stackedit.io/).
