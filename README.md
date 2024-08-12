@@ -118,3 +118,100 @@ And here is a second example of utilizing the `NOT` operator to exclude certain 
 
 In conclusion, these filters are simple yet effective and does not require that much rocket science. Although in certain scenarios where there are longer queries then it might get a little more confusing. 
 
+## 5. Incident handler journal
+
+Here in this part of my portfolio will be included five incident journal entries as per requisite by the Google Cyber Security Certification course. In this section there will be various life-like scenarios covered to demonstrate my reporting an adnotation skills.
+
+In this example, we'll be going over an incident journal that covers a scenario where a malicious attack was counducted by unethical hackers onto a U.S. health care clinic encrypting lots and lots of patient and company info in exchange for a large amount of money to decrypt it. As you may have noticed, in certain reports I tend to keep stuff short, clean, and precise as possible. My adnotation style for notes is somewhat of a hybrid between a programming language and a natural language. For example, the term uhackers is short for unethical hackers, where ehackers would be short for ethical hackers. To some this might seem confusing, but as long as it works for me and I know what's going on then Bob's your uncle. :)
+
+### First example
+---
+
+|**Date**|**Entry**|
+|-|-|
+|13-08-2024 Tuesday @ 0900 AM| Malicious attack: Phishing; Ransomeware |
+|Description| A U.S. health care clinic became victim under a malicious:ransomeware attack conducted by uhackers|
+|Tools utilized| Splunk, Datadog|
+| | 1. Who: uhackers |
+| The| 2. What: target: U.S. health care clinic |
+| Five|3. When: 13-08-2024 @ 0900 AM |
+| W's|4. Where: Madison, WI |
+| |5. Why: money exchange for ransome |
+|Adnotations| This attack was deployed through phishing. Several employees received a suspicious email by the same style with the same malicious attatchment included. Upon opening the email it was noticed that the malicious download was initiated once the email received the <email read> flag, causing it to disable some computers and eventually restricting access to vital data. Once the ransomeware got ahold of every machine, the network and other services linked to the health care clinic had to be shutdown and backup technical assistance was requested by the clinic to avoid paying the uhackers a large amount of cash to decrypt the files. |
+
+### First example
+---
+
+|**Date**|**Entry**|
+|-|-|
+|13-08-2024 Tuesday @ 0900 AM| Malicious attack: Phishing; Ransomeware |
+|Description| A U.S. health care clinic became victim under a malicious:ransomeware attack conducted by uhackers|
+|Tools utilized| Splunk, Datadog|
+| | 1. Who: uhackers |
+| The| 2. What: target: U.S. health care clinic |
+| Five|3. When: 13-08-2024 @ 0900 AM |
+| W's|4. Where: Madison, WI |
+| |5. Why: money exchange for ransome |
+|Adnotations|
+
+### Second example
+---
+
+|**Date**|**Entry**|
+|-|-|
+|13-08-2024 Tuesday @ 0900 AM| Malicious attack: Phishing; Ransomeware |
+|Description| A U.S. health care clinic became victim under a malicious:ransomeware attack conducted by uhackers|
+|Tools utilized| Splunk, Datadog|
+| | 1. Who: uhackers |
+| The| 2. What: target: U.S. health care clinic |
+| Five|3. When: 13-08-2024 @ 0900 AM |
+| W's|4. Where: Madison, WI |
+| |5. Why: money exchange for ransome |
+|Adnotations|
+
+### Third example
+---
+
+|**Date**|**Entry**|
+|-|-|
+|13-08-2024 Tuesday @ 0900 AM| Malicious attack: Phishing; Ransomeware |
+|Description| A U.S. health care clinic became victim under a malicious:ransomeware attack conducted by uhackers|
+|Tools utilized| Splunk, Datadog|
+| | 1. Who: uhackers |
+| The| 2. What: target: U.S. health care clinic |
+| Five|3. When: 13-08-2024 @ 0900 AM |
+| W's|4. Where: Madison, WI |
+| |5. Why: money exchange for ransome |
+|Adnotations|
+
+### Fourth example
+---
+
+|**Date**|**Entry**|
+|-|-|
+|13-08-2024 Tuesday @ 0900 AM| Malicious attack: Phishing; Ransomeware |
+|Description| A U.S. health care clinic became victim under a malicious:ransomeware attack conducted by uhackers|
+|Tools utilized| Splunk, Datadog|
+| | 1. Who: uhackers |
+| The| 2. What: target: U.S. health care clinic |
+| Five|3. When: 13-08-2024 @ 0900 AM |
+| W's|4. Where: Madison, WI |
+| |5. Why: money exchange for ransome |
+|Adnotations|
+
+### Fifth example
+---
+
+|**Date**|**Entry**|
+|-|-|
+|13-08-2024 Tuesday @ 0900 AM| Malicious attack: Phishing; Ransomeware |
+|Description| A U.S. health care clinic became victim under a malicious:ransomeware attack conducted by uhackers|
+|Tools utilized| Splunk, Datadog|
+| | 1. Who: uhackers |
+| The| 2. What: target: U.S. health care clinic |
+| Five|3. When: 13-08-2024 @ 0900 AM |
+| W's|4. Where: Madison, WI |
+| |5. Why: money exchange for ransome |
+|Adnotations|
+
+
