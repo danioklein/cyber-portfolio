@@ -66,7 +66,9 @@ For this scenario, a toy company under the name Botium Toys established in the U
 
 ## 3. Linux commands and the CLI
 
-In this scenario, 
+In this scenario, we'll be going over my knowledge of the Linux CLI and it's commands that are included in the bash shell. Below is included a screenshot with explanations of every step made, what each command does and how the permissions work.
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
