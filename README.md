@@ -76,5 +76,11 @@ As you can see, commands like `chmod` and `ls -la` were utilized to make the per
 
 In MS-DOS and similar disk operating systems, the command `ls -la` would be equivalent to the `dir /w` command, whereas the equivalent of `chmod` would be `attrib`, but since the MS-DOS file structure is different in comparision to Linux/Unix, MS-DOS has different permission values. 
 
+## 4. Applying filters with SQL commands
+
+In this section we'll be going over some simple yet effective filters that can be utilized to find and locate specific information. With the project below, I was tasked to locate failed login attempts that happened out of working hours and workstations for certain departments that required a software update.
+
+![alt_text](
+
 
 > Written with [StackEdit](https://stackedit.io/).
