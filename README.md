@@ -68,7 +68,7 @@ For this scenario, a toy company under the name Botium Toys established in the U
 
 In this scenario, we'll be going over my knowledge of the Linux CLI and it's commands that are included in the bash shell. Below is included a screenshot with explanations of every step made, what each command does and how the permissions work.
 
-![alt text](
+![alt text](https://github.com/danioklein/cyber-portfolio/blob/469b087a7f26eb85545ef6c6833cd5c7d6cfbcf3/Opera%20Snapshot_2024-08-08_204506.png)
 
 
 > Written with [StackEdit](https://stackedit.io/).
