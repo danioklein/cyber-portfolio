@@ -68,7 +68,11 @@ For this scenario, a toy company under the name Botium Toys established in the U
 
 In this scenario, we'll be going over my knowledge of the Linux CLI and it's commands that are included in the bash shell. Below is included a screenshot with explanations of every step made, what each command does and how the permissions work.
 
+For this project, my task was to update certain file permissions due to a security policy revision.
+
 ![alt text](https://github.com/danioklein/cyber-portfolio/blob/469b087a7f26eb85545ef6c6833cd5c7d6cfbcf3/Opera%20Snapshot_2024-08-08_204506.png)
+
+As you can see, commands like `chmod` and `ls -la` were utilized to make the permission changes possible. For one, the command `ls -la` was used to list the directory in full detail including the hidden files that start with a `.` alongside the current permissions displayed from the left side with these letters:`drwxrwxrwx` and the command `chmod` was used to delete or elevate privileges. In order to add or remove a permission to a user, group or other, the file first has to be inspected with what permissions are in place. If we'd want to add read and write access for the user, then the input command would go like this:`chmod u+rw FILENAME.txt` and if we'd want to remove that same set of access, all we have to do is swap the `+` with a `-`, which gives us this input command:`chmod u-rw FILENAME.txt`. Multiple groups can be changed at once with any of the following letters: `u`, `g` and `o`. To elevate read and write access for multiple groups, all we have to do is specify which ones we want to allow for. For example: `chmod ug+rwx FILENAME.txt` grants read, write and execute access for the user and group respectively. As seen above, you can also add a pipe `|` which tells the command line to execute the next command that's been typed into the prompt, and as you can see I've given and removed access for two files at the same time. The permissions structure goes as such: `drwxrwxrwx` in which the first letter `d` indicates a directory, the first three `rwx` indicate `r`ead, `w`rite and e`x`ecute for the **user**, the second set of those letters indicate the same but for the **group** and the last set of those letters indicate the same thing but for the **other**. 
 
 
 > Written with [StackEdit](https://stackedit.io/).
