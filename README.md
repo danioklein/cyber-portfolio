@@ -17,6 +17,7 @@ In this section is presented a brief sample of a security incident report conduc
 | **Section 3: Recommend one remediation for brute force attacks** |
 |The easiest way to prevent such an attack from happening again is to immediately set up different login credentials, with a password containing at least a total of 16 characters of which it can include a minimum of 2 numbers and 2 special characters.|
 
+---
 In this example, the scenario described a rogue attack conducted by a former employee that used to work in a bakery. With this knowledge in place, the malicious actor proceeds to brute force attack the website of the bakery and modifies it by adding a couple of bad lines in javascript, which causes unnecessary damages for both the owner of the website, the customers and it's devices used to browse the website. 
 
 ## 2. Controls and compliance checklist
@@ -62,6 +63,7 @@ For this scenario, a toy company under the name Botium Toys established in the U
 |Data integrity ensures the data is consistent, complete, accurate, and has been validated||•|
 |Data is available to individuals authorized to access it|•|
 
+---
 *Recommendation: Given the security posture Botium Toys is in, I urgently recommend to focus on data encryption including payment processing and customer data as well as configuring proper employee access privileges to PII/SPII data, least privileges, data recovery plans, password policies, manual monitoring schedule for legacy systems, back-ups, an IDS and a password management system to ensure that the company is at it’s highest digital security standards in order to prevent any type of unwanted leaks, breaches or stolen identities. Not only this would generate a loss of profit, but this would also lose trust in your customers. In regards of clientele purchasing items from outside of the United States, namely from the European Union countries, it is also highly recommended to abide to their security standards, as this may pose a massive fine if none of the standards have been met. Otherwise, physical security measures have been met to its standards.*
 
 ## 3. Linux commands and the CLI
@@ -72,6 +74,7 @@ For this project, my task was to update certain file permissions due to a securi
 
 ![alt text](https://github.com/danioklein/cyber-portfolio/blob/469b087a7f26eb85545ef6c6833cd5c7d6cfbcf3/Opera%20Snapshot_2024-08-08_204506.png)
 
+---
 As you can see, commands like `chmod` and `ls -la` were utilized to make the permission changes possible. For one, the command `ls -la` was used to list the directory in full detail including the hidden files that start with a `.` alongside the current permissions displayed from the left side with these letters:`drwxrwxrwx` and the command `chmod` was used to delete or elevate privileges. In order to add or remove a permission to a user, group or other, the file first has to be inspected with what permissions are in place. If we'd want to add read and write access for the user, then the input command would go like this:`chmod u+rw FILENAME.txt` and if we'd want to remove that same set of access, all we have to do is swap the `+` with a `-`, which gives us this input command:`chmod u-rw FILENAME.txt`. Multiple groups can be changed at once with any of the following letters: `u`, `g` and `o`. To elevate read and write access for multiple groups, all we have to do is specify which ones we want to allow for. For example: `chmod ug+rwx FILENAME.txt` grants read, write and execute access for the user and group respectively. As seen above, you can also add a pipe `|` which tells the command line to execute the next command that's been typed into the prompt, and as you can see I've given and removed access for two files at the same time. The permissions structure goes as such: `drwxrwxrwx` in which the first letter `d` indicates a directory, the first three `rwx` indicate `r`ead, `w`rite and e`x`ecute for the **user**, the second set of those letters indicate the same but for the **group** and the last set of those letters indicate the same thing but for the **other**. 
 
 In MS-DOS and similar disk operating systems, the command `ls -la` would be equivalent to the `dir /w` command, whereas the equivalent of `chmod` would be `attrib`, but since the MS-DOS file structure is different in comparision to Linux/Unix, MS-DOS has different permission values. 
@@ -80,7 +83,38 @@ In MS-DOS and similar disk operating systems, the command `ls -la` would be equi
 
 In this section we'll be going over some simple yet effective filters that can be utilized to find and locate specific information. With the project below, I was tasked to locate failed login attempts that happened out of working hours and workstations for certain departments that required a software update.
 
-![alt_text](
+![alt_text](https://github.com/danioklein/cyber-portfolio/blob/3a99a2549e70dd6f0ed0d99c9e93246784ae3cbf/Opera%20Snapshot_2024-08-12_191511_www.cloudskillsboost.google.png)
 
+As seen here, my main goal was to find failed login attempts that happened before 6:00 PM, and with the results provided it seems that there are quite some tries over here. The operator `AND` includes two columns in this case: `login_time` anywhere `> 18:00 AND` if the login attempts were `FALSE` or `0`, or simply put unsuccessful.
 
-> Written with [StackEdit](https://stackedit.io/).
+---
+![alt_text](https://github.com/danioklein/cyber-portfolio/blob/3a99a2549e70dd6f0ed0d99c9e93246784ae3cbf/Opera%20Snapshot_2024-08-12_192043_www.cloudskillsboost.google.png)
+![alt_text](https://github.com/danioklein/cyber-portfolio/blob/3a99a2549e70dd6f0ed0d99c9e93246784ae3cbf/Opera%20Snapshot_2024-08-12_192124_www.cloudskillsboost.google.png)
+
+Over here with this next step I was supposed to retrieve any login attempts that occured between the 8th and the 9th. The operator `OR` serves as a condition marker to include one `OR` another, and in this case the dates of `2022-05-08` and `2022-05-09` were specified in order to return the necessary information needed. 
+
+---
+![alt_text](https://github.com/danioklein/cyber-portfolio/blob/3a99a2549e70dd6f0ed0d99c9e93246784ae3cbf/Opera%20Snapshot_2024-08-12_192420_www.cloudskillsboost.google.png)
+![alt_text](https://github.com/danioklein/cyber-portfolio/blob/3a99a2549e70dd6f0ed0d99c9e93246784ae3cbf/Opera%20Snapshot_2024-08-12_192456_www.cloudskillsboost.google.png)
+
+With this step I was tasked to filter out login attempts that happened outside of Mexico, and as you can see there are quite some attempts here. It's no wonder the organization wanted to conduct a security update for their machines. However, in this example the operator `NOT` was utilized in order to weed out any login location that happened outside of Mexico, where `MEX%` was used to filter out both the values `MEX` and `MEXICO`.
+
+---
+![alt_text](https://github.com/danioklein/cyber-portfolio/blob/3a99a2549e70dd6f0ed0d99c9e93246784ae3cbf/Opera%20Snapshot_2024-08-12_192813_www.cloudskillsboost.google.png)
+
+Here I was supposed to find out how many machines are there in any of the East offices within the Marketing department. Not that much to be honest. Here the operator `AND` has been used to include both the `East%` to locate more than one East office and the `department = 'Marketing'` to return results found within the table.
+
+---
+![alt_text](https://github.com/danioklein/cyber-portfolio/blob/3a99a2549e70dd6f0ed0d99c9e93246784ae3cbf/Opera%20Snapshot_2024-08-12_194557_www.cloudskillsboost.google.png)
+![alt_text](https://github.com/danioklein/cyber-portfolio/blob/3a99a2549e70dd6f0ed0d99c9e93246784ae3cbf/Opera%20Snapshot_2024-08-12_194620_www.cloudskillsboost.google.png)
+
+To be honest, at first this one was quite confusing to me but then I realized what I was doing wrong. In this case both conditions were needed to be inlcuded to return proper results, as in `department LIKE 'Finance' OR department LIKE 'Sales'` instead of `department LIKE 'Finance' OR 'Sales'`. 
+
+---
+![alt_text](https://github.com/danioklein/cyber-portfolio/blob/3a99a2549e70dd6f0ed0d99c9e93246784ae3cbf/Opera%20Snapshot_2024-08-12_194801_www.cloudskillsboost.google.png)
+![alt_text](https://github.com/danioklein/cyber-portfolio/blob/3a99a2549e70dd6f0ed0d99c9e93246784ae3cbf/Opera%20Snapshot_2024-08-12_194820_www.cloudskillsboost.google.png)
+
+And here is a second example of utilizing the `NOT` operator to exclude certain information.
+
+In conclusion, these filters are simple yet effective and does not require that much rocket science. Although in certain scenarios where there are longer queries then it might get a little more confusing. 
+
