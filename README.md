@@ -139,21 +139,6 @@ In this example, we'll be going over an incident journal that covers a scenario 
 | |5. Why: money exchange for ransome |
 |Adnotations| This attack was deployed through phishing. Several employees received a suspicious email by the same style with the same malicious attatchment included. Upon opening the email it was noticed that the malicious download was initiated once the email received the <email read> flag, causing it to disable some computers and eventually restricting access to vital data. Once the ransomeware got ahold of every machine, the network and other services linked to the health care clinic had to be shutdown and backup technical assistance was requested by the clinic to avoid paying the uhackers a large amount of cash to decrypt the files. |
 
-### First example
----
-
-|**Date**|**Entry**|
-|-|-|
-|13-08-2024 Tuesday @ 0900 AM| Malicious attack: Phishing; Ransomeware |
-|Description| A U.S. health care clinic became victim under a malicious:ransomeware attack conducted by uhackers|
-|Tools utilized| Splunk, Datadog|
-| | 1. Who: uhackers |
-| The| 2. What: target: U.S. health care clinic |
-| Five|3. When: 13-08-2024 @ 0900 AM |
-| W's|4. Where: Madison, WI |
-| |5. Why: money exchange for ransome |
-|Adnotations|
-
 ### Second example
 ---
 
@@ -213,5 +198,3 @@ In this example, we'll be going over an incident journal that covers a scenario 
 | W's|4. Where: Madison, WI |
 | |5. Why: money exchange for ransome |
 |Adnotations|
-
-
