@@ -174,3 +174,33 @@ In this example, we'll be going over an incident journal that covers a scenario 
 
 In this example, we'll be going over the automatics of Python and what it can do for us to ease certain tasks that would require a lot of effort and time put in. For this scenario my task was to update a list of IPs that were supposed to be removed with a list that's included in the source file. 
 
+![alt_text](https://github.com/danioklein/cyber-portfolio/blob/e63bc432545eb295ef8cb217d872ef37e380de5a/Opera%20Snapshot_2024-08-13_172622_www.coursera.org.png)
+
+---
+![alt_text](https://github.com/danioklein/cyber-portfolio/blob/e63bc432545eb295ef8cb217d872ef37e380de5a/Opera%20Snapshot_2024-08-13_172924_www.coursera.org.png)
+
+---
+![alt_text](https://github.com/danioklein/cyber-portfolio/blob/e63bc432545eb295ef8cb217d872ef37e380de5a/Opera%20Snapshot_2024-08-13_173124_www.coursera.org.png)
+
+---
+![alt_text](https://github.com/danioklein/cyber-portfolio/blob/e63bc432545eb295ef8cb217d872ef37e380de5a/Opera%20Snapshot_2024-08-13_173336_www.coursera.org.png)
+
+---
+![alt_text](https://github.com/danioklein/cyber-portfolio/blob/e63bc432545eb295ef8cb217d872ef37e380de5a/Opera%20Snapshot_2024-08-13_173621_www.coursera.org.png)
+
+---
+![alt_text](https://github.com/danioklein/cyber-portfolio/blob/e63bc432545eb295ef8cb217d872ef37e380de5a/Opera%20Snapshot_2024-08-13_173855_www.coursera.org.png)
+
+---
+![alt_text](https://github.com/danioklein/cyber-portfolio/blob/e63bc432545eb295ef8cb217d872ef37e380de5a/Opera%20Snapshot_2024-08-13_174118_www.coursera.org.png)
+
+---
+![alt_text](https://github.com/danioklein/cyber-portfolio/blob/e63bc432545eb295ef8cb217d872ef37e380de5a/Opera%20Snapshot_2024-08-13_174644_www.coursera.org.png)
+
+---
+1[alt_text](https://github.com/danioklein/cyber-portfolio/blob/e63bc432545eb295ef8cb217d872ef37e380de5a/Opera%20Snapshot_2024-08-13_174904_www.coursera.org.png)
+
+---
+![alt_text](https://github.com/danioklein/cyber-portfolio/blob/e63bc432545eb295ef8cb217d872ef37e380de5a/Opera%20Snapshot_2024-08-13_175225_www.coursera.org.png)
+
+
