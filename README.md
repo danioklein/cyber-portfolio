@@ -176,31 +176,51 @@ In this example, we'll be going over the automatics of Python and what it can do
 
 ![alt_text](https://github.com/danioklein/cyber-portfolio/blob/e63bc432545eb295ef8cb217d872ef37e380de5a/Opera%20Snapshot_2024-08-13_172622_www.coursera.org.png)
 
+In this snippit, we are preparing the main string which is `import_file` and the list known as `remove_list` to later on filter out the IP addresses that need to be removed from the `allow_list.txt` file. First, I've printed out the following string and list to check if the code is properly functioning. Comments are left over so that other fellow members can understand the code if further editing would be necessary.
+
 ---
 ![alt_text](https://github.com/danioklein/cyber-portfolio/blob/e63bc432545eb295ef8cb217d872ef37e380de5a/Opera%20Snapshot_2024-08-13_172924_www.coursera.org.png)
+
+The next step was to implement the `open()` function in it's initial stage. The compiler returns an error because it expects more detail in order to handle the rest of the function, and that will be presented in the next step.
 
 ---
 ![alt_text](https://github.com/danioklein/cyber-portfolio/blob/e63bc432545eb295ef8cb217d872ef37e380de5a/Opera%20Snapshot_2024-08-13_173124_www.coursera.org.png)
 
+Here we have the fully functional code that was meant to be printed out. The indented line `ip_adresses = file.read()` was missing so that it can read directly from the file. Finishing this step I've left a `print()` statemnt to check if the code runs properly.
+
 ---
 ![alt_text](https://github.com/danioklein/cyber-portfolio/blob/e63bc432545eb295ef8cb217d872ef37e380de5a/Opera%20Snapshot_2024-08-13_173336_www.coursera.org.png)
+
+In this step, I've used `ip_addresses = ip_addresses.split()` statement to convert the string to a list, thus showing that it executed the code successfully. 
 
 ---
 ![alt_text](https://github.com/danioklein/cyber-portfolio/blob/e63bc432545eb295ef8cb217d872ef37e380de5a/Opera%20Snapshot_2024-08-13_173621_www.coursera.org.png)
 
+In this stage I'm setting up a loop statment, otherwise known as an iterative statement to loop through the text file so that later on this code can filter through the IP addresses that are unwanted. The code that represents that is `for element in ip_addresses:` where `element` is the loop variable. 
+
 ---
 ![alt_text](https://github.com/danioklein/cyber-portfolio/blob/e63bc432545eb295ef8cb217d872ef37e380de5a/Opera%20Snapshot_2024-08-13_173855_www.coursera.org.png)
+
+Later on, I'm setting up a conditional statement `if element in remove_list:` which tells the interpreter to look through the `remove_list` followed by a `ip_addresses.remove(element)` to remove the matching IP address specified in the `remove_list` list. 
 
 ---
 ![alt_text](https://github.com/danioklein/cyber-portfolio/blob/e63bc432545eb295ef8cb217d872ef37e380de5a/Opera%20Snapshot_2024-08-13_174118_www.coursera.org.png)
 
+In the next step I'm implememnting a conversion statmenet `ip_addresses = "".join(ip_addresses)` followed by the `with open(import_file, "w") as file:` and `file.write(ip_addresses)` statement so that it converts the filtered data back into a string, followed by an overwriting routine to the `import_file` string with the removed IP addresses. In this case there is no printed results because no such statement is included in the code.
+
 ---
 ![alt_text](https://github.com/danioklein/cyber-portfolio/blob/e63bc432545eb295ef8cb217d872ef37e380de5a/Opera%20Snapshot_2024-08-13_174644_www.coursera.org.png)
 
+Now here is where we'll be displaying the results. As earlier we'll be implementing another read routine: `with open(import_file, "r") as file:` `text = file.read()` followed by a print statement `print(text)` to show the allowed IP addresses.
+
 ---
-1[alt_text](https://github.com/danioklein/cyber-portfolio/blob/e63bc432545eb295ef8cb217d872ef37e380de5a/Opera%20Snapshot_2024-08-13_174904_www.coursera.org.png)
+![alt_text](https://github.com/danioklein/cyber-portfolio/blob/e63bc432545eb295ef8cb217d872ef37e380de5a/Opera%20Snapshot_2024-08-13_174904_www.coursera.org.png)
+
+So now this is where it get's a little advanced. On the very beginning of the code, this whole routine will be converted into a customized function using this statement `def update_file(import_file, remove_list):` where the `import_file` is the source document and the `remove_list` will be the specified IP addresses to be removed in future allow lists.
 
 ---
 ![alt_text](https://github.com/danioklein/cyber-portfolio/blob/e63bc432545eb295ef8cb217d872ef37e380de5a/Opera%20Snapshot_2024-08-13_175225_www.coursera.org.png)
+
+With our customized function, I've added another line of code `update_file("allow_list.txt", [..IP ADDRESSES..])` along with the edited line `with open("allow_list.txt", "r") as file:` to match the criteria of the function and `text = file.read()` ended with a print statement `print(text)` to display the final list of allowed IP addresses.
 
 
