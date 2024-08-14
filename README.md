@@ -144,57 +144,33 @@ In this example, we'll be going over an incident journal that covers a scenario 
 
 |**Date**|**Entry**|
 |-|-|
-|13-08-2024 Tuesday @ 0900 AM| Malicious attack: Phishing; Ransomeware |
-|Description| A U.S. health care clinic became victim under a malicious:ransomeware attack conducted by uhackers|
-|Tools utilized| Splunk, Datadog|
-| | 1. Who: uhackers |
-| The| 2. What: target: U.S. health care clinic |
-| Five|3. When: 13-08-2024 @ 0900 AM |
-| W's|4. Where: Madison, WI |
-| |5. Why: money exchange for ransome |
-|Adnotations|
+|04-07-2024 Thursday @ 1100 AM| Phishing: stolen and deleted credentials|
+|Description| A Danish insurance company fell victim of a phishing attack which resulted into leaked credentials and some data deleted|
+|Tools utilized| Splunk|
+| | 1. Who: unknown |
+| The| 2. What: Danish insurance company |
+| Five|3. When: 04-07-2024 @ 1100 AM |
+| W's|4. Where: Copenhagen, DK |
+| |5. Why: possibly to use credentials for fraudulent activities|
+|Adnotations| A phishing attack was conducted towards an insurance company located in Copenhagen, Denmark. Several employees have received a phishing email that identically resebled the login prompt to their network of business. Upon every attempt of loging in, employees couldn't access further because the login screen hasn't changed, implying that it was a fake domain created by an unknown third party. Soon to be discovered, the malicious actor managed to gain access to sensitive customer data in which some entries were either manipulated or deleted from the database. To prevent any further damage, the organizations' netowrking systems have been temporarily shutdown, saftey measures were implemented to fortify network defences such as firewall rules being updated, two-factor authentication and the implementation of updating passwords every six months. A back-up of the data has been restored to the damaged database and IT assistance was requested to further inspect this incident from their side. |
 
 ### Third example
 ---
 
 |**Date**|**Entry**|
 |-|-|
-|13-08-2024 Tuesday @ 0900 AM| Malicious attack: Phishing; Ransomeware |
-|Description| A U.S. health care clinic became victim under a malicious:ransomeware attack conducted by uhackers|
-|Tools utilized| Splunk, Datadog|
-| | 1. Who: uhackers |
-| The| 2. What: target: U.S. health care clinic |
-| Five|3. When: 13-08-2024 @ 0900 AM |
-| W's|4. Where: Madison, WI |
-| |5. Why: money exchange for ransome |
-|Adnotations|
+|05-04-2024 Friday @ 0830 AM| Mis-use: employee downloaded software without correct authorization |
+|Description| A private humanitarian organization employee downloaded software on their workstation without prior authorization from administrator|
+|Tools utilized| Datadog|
+| | 1. Who: employee |
+| The| 2. What: A private humanitarian organization |
+| Five|3. When: 05-04-2024 @ 0830 AM |
+| W's|4. Where: Gdansk, PL |
+| |5. Why: eployee wanted to try out something on his workstation because he forgot his private laptop at home |
+|Adnotations| Early in the morning I've received a ticket of an employee downloading software without the proper administrator authorization. The employee managed to download a copy of an image manipulation program from a third party source, which resulted the workstation to fall in computing performance, taking up storage and possibly having installed spyware along with the program since it wasn't straight from the official website. The employee was asked to remove the program immediately to prevent any further damage, a software swipe was done to check if everything is intact and erradication was conducted. The workstation was restored to it's previous state with a snapshot that was made from the IT team by their side.|
 
-### Fourth example
----
 
-|**Date**|**Entry**|
-|-|-|
-|13-08-2024 Tuesday @ 0900 AM| Malicious attack: Phishing; Ransomeware |
-|Description| A U.S. health care clinic became victim under a malicious:ransomeware attack conducted by uhackers|
-|Tools utilized| Splunk, Datadog|
-| | 1. Who: uhackers |
-| The| 2. What: target: U.S. health care clinic |
-| Five|3. When: 13-08-2024 @ 0900 AM |
-| W's|4. Where: Madison, WI |
-| |5. Why: money exchange for ransome |
-|Adnotations|
+## 6. Automation with Python
 
-### Fifth example
----
+In this example, we'll be going over the automatics of Python and what it can do for us to ease certain tasks that would require a lot of effort and time put in. For this scenario my task was to update a list of IPs that were supposed to be removed with a list that's included in the source file. 
 
-|**Date**|**Entry**|
-|-|-|
-|13-08-2024 Tuesday @ 0900 AM| Malicious attack: Phishing; Ransomeware |
-|Description| A U.S. health care clinic became victim under a malicious:ransomeware attack conducted by uhackers|
-|Tools utilized| Splunk, Datadog|
-| | 1. Who: uhackers |
-| The| 2. What: target: U.S. health care clinic |
-| Five|3. When: 13-08-2024 @ 0900 AM |
-| W's|4. Where: Madison, WI |
-| |5. Why: money exchange for ransome |
-|Adnotations|
